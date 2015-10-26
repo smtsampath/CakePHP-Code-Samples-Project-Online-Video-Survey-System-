@@ -1,0 +1,81 @@
+/* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+#content .tabs-nav {
+    list-style: none;
+    margin:0;
+    padding: 0 0 0 0;
+	border-bottom: 1px solid #a6a9aa;
+}
+.tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+
+.tabs-nav li {
+    float: left;
+    margin: 0 4px 0 0;
+	list-style:none;
+}
+.tabs-nav a {
+    width:190px;
+    height: 34px;
+	font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+	color: #c5c4c4;
+	text-transform:uppercase;
+	display: block;
+	position:relative;
+    z-index:0;
+    background: url(../images/tab.png) no-repeat;
+	line-height: 34px;
+}
+.tabs-nav .tabs-selected a, #content .content_inner .tabs-selected a {
+    color: #ffffff;
+}
+.tabs-nav .tabs-selected a, .tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active {
+    line-height: 34px;
+	background-position: 0 -34px;
+	color:#ffffff;
+    outline: 0; /* @ Firefox, switch off dotted border */
+}
+.tabs-nav .tabs-disabled a:hover, .tabs-nav .tabs-disabled a:focus, .tabs-nav .tabs-disabled a:active {
+    background-position: 0 0;
+}
+.tabs-nav .tabs-selected a:link, .tabs-nav .tabs-selected a:visited,
+.tabs-nav .tabs-disabled a:link, .tabs-nav .tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+.tabs-nav .tabs-disabled {
+    opacity: .4;
+}
+.tabs-container {
+	height:43px;
+    padding: 17px 8px  10px 8px;
+	background: url(../images/search_bg.png) repeat-x;/* declare background color for container to avoid distorted fonts in IE while fading */
+	position:relative;
+	overflow:hidden;
+}
+/* Uncomment this if you want a little spinner to be shown next to the tab title while an Ajax tab gets loaded
+.tabs-loading span {
+    padding: 0 0 0 20px;
+    background: url(loading.gif) no-repeat 0 50%;
+}*/

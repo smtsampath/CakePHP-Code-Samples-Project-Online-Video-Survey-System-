@@ -1,0 +1,67 @@
+@import url("reset.css");
+@import url("style.css");
+@import url("ie.css");
+/* @import url('blue/blue.css'); */
+a.buttonSignUp {
+	
+    display: block;
+  
+    margin-top:265px; 
+    margin-left:-10px;
+    position: absolute;
+    
+    color:#fff;
+}
+a.buttonSignUp:hover{
+	 background:url(../img/click_here_h.png) no-repeat;
+	
+
+}
+
+
+#slider{list-style-type:none; margin:0; padding:0; width:1000px; height:338px; /*width:683px; float:left; height:206px;*/}
+#slider2{list-style-type:none; margin:0; padding:0; width:1000px; height:338px;}
+#slider2 img{display:none;}
+.nojs #slider, .nojs #slider2{overflow:hidden; height:338px;}/* if javascript disabled */
+.nojs #scrubber{display:none;}
+#scrubber {
+  margin: 35px auto 0px auto !important;
+  height: 31px;
+  background-image:url(../images/greyline.gif);
+  background-repeat:repeat-x;
+  background-position:0px 3px;
+  position:relative;
+}
+#scrubmover {
+  position:absolute;
+  left:-9px;
+  top:-12px;
+  height:31px;
+  width: 31px;
+}
+#scrubber a.item {
+  height: 7px;
+  width: 13px;
+  float:left;
+  display:block;
+  margin-right:0px;
+}
+#scrubber .lastscrubber{
+	margin-right:0px !important;
+	clear:right;
+}
+#scrubmover {
+  background-image: url(blue/scrubber2.png);
+  background-repeat: no-repeat;
+}
+#scrubber a.item {
+  background-image: url(blue/bluedot2.png);
+  background-position:left;
+  background-repeat: no-repeat;
+}
+.select_widthsmall{
+	width:150px;
+}
+.select_widthbig{
+	width:250px;
+	}

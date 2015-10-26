@@ -1,0 +1,30 @@
+#home_banner_blocks {
+	clear:both;
+	margin-top:5px;
+}
+#category ul {
+	position:relative;
+}
+#category li a {
+	margin-top:-13px;
+}
+#container {
+	float:left;
+	position:relative;
+}
+#container #content {
+	float:left;
+	position:relative;
+	margin-left:0px;
+	padding-left:0;
+}
+/*
+.tabs-nav {
+	float:left;
+}
+.tabs-container {
+	width:100%;
+}
+#branding h1 a {
+	display:inline;
+}*/

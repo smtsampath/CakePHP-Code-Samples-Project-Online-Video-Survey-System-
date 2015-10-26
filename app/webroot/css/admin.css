@@ -1,0 +1,294 @@
+@charset "utf-8";
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	background-color: #003d4c;
+	margin:0px;
+	padding:0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	font-weight:normal;
+	margin:0.4em 0 0.1em 0;
+}
+
+h1 {	font-size:72px;}
+h2 {	font-size:48px;}
+h3 {	font-size:36px;}
+h4 {	font-size:30px;}
+h5 {	font-size:24px;}
+h6 {	font-size:18px;}
+
+/* --------------------------------- Login Page Specific --------------------------------- */
+
+#login {
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	color:#f2f3f0;
+	background-color:#fff;
+	
+	width:100%;
+	padding: 10px 0px 5px 0px;
+	text-align:center;
+}
+
+#login-header {
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	color:#f2f3f0;
+	margin:auto;
+	width:600px;
+	text-align:center;
+}
+
+#login-box {
+	background-color:#fff;
+	margin:40px auto;
+	padding:30px;
+	width:450px;
+	border-radius: 5px;
+	border:1px solid #333;
+}
+
+	#login-box fieldset {
+		text-align:center;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding:10px;		
+		font-size: 15px;
+	}
+	
+	#login-box label {
+		display:inline-block;
+		width:100px;
+		color:#555;
+		font-size: 16px;
+	}
+	
+	#login-box .text input, #login-box .password input {
+		height:25px;
+		width:200px;
+		margin:10px 0px;
+		font-size: 13px;
+		border:1px solid #333;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+		#login-box .text input:focus, #login-box .password input:focus {
+			box-shadow:0px 0px 5px #4e8ba2;
+			-moz-box-shadow:0px 0px 5px #4e8ba2;
+			-webkit-box-shadow:0px 0px 5px #4e8ba2;
+		}
+	
+	#login-box .submit {
+		text-align:right;
+	}
+		
+	#login-box .submit input {
+		margin-top:10px;
+		background-image:url(../img/buttonbk.png);
+		background-position:0px 35px;
+		height:35px;
+		padding:0 25px;;
+		border:1px solid #a0bccf;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		box-shadow:0px 0px 2px #4e8ba2;
+		-moz-box-shadow:0px -1px 2px #aaa;
+		-webkit-box-shadow:0px 0px 2px #4e8ba2;
+		font-weight:bold;
+		text-shadow:0px 1px #fff;
+	}
+		
+		#login-box .submit input:hover {
+			box-shadow:0px -1px 5px #4e8ba2;
+			-moz-box-shadow:0px -1px 5px #aaa;
+			-webkit-box-shadow:0px -1px 5px #4e8ba2;
+		}
+		
+		#login-box .submit input:active {
+			background-position:0px 0px;
+		}
+
+		
+/* --------------------------------- Admin Page Specific --------------------------------- */
+
+#wrapper {
+	width:960px;
+	margin:auto;
+	background-color:#f2f3f0;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+}
+
+.float-clear {
+	clear:both;
+	height:0px;
+	overflow:hidden;
+}
+
+#header {
+	color:#1a2747;
+	/*width:940px;*/
+	padding: 20px 0;
+	width:100%;
+}
+
+#admin-logo {
+	float:left;
+	width:157px;
+	height:82px;
+}
+
+#admin-title {
+	padding-left:10px;
+	float:left;
+	width:770px;
+}
+	#admin-title h3 {
+		padding:0px;
+		margin:0px;
+		text-shadow:0px 1px 3px rgba(0, 100, 190, 0.29);
+	}
+	
+#sidebar {
+	margin-top:30px;
+	float:left;
+	width:150px;
+	padding-left:10px;
+}
+
+#main-content {
+	margin-top:30px;
+	float:left;
+	width:775px;
+	padding:10px;
+}
+
+	#main-content textarea {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:12px;
+	}
+	
+	#main-content fieldset {
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding:10px;
+	}
+	
+	#main-content label {
+		display:block;
+		/*width:100px;*/
+		color:#555;
+		vertical-align:top;
+	}
+	
+	#main-content .text input, #main-content .password input {
+		height:20px;
+		width:400px;
+		margin:10px 0px;
+		border:1px solid #333;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+		#main-content .text input:focus, #main-content .password input:focus {
+			box-shadow:0px 0px 5px #4e8ba2;
+			-moz-box-shadow:0px 0px 5px #4e8ba2;
+			-webkit-box-shadow:0px 0px 5px #4e8ba2;
+		}
+	
+	#main-content .para textarea {
+		height:200px;
+		width:400px;
+		margin:10px 0px;
+		border:1px solid #333;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+		#main-content .para textarea:focus {
+			box-shadow:0px 0px 5px #4e8ba2;
+			-moz-box-shadow:0px 0px 5px #4e8ba2;
+			-webkit-box-shadow:0px 0px 5px #4e8ba2;
+		}
+	
+	#main-content .submit {
+		text-align:right;
+	}
+		
+	#main-content .submit input {
+		margin-top:10px;
+		background-image:url(../images/buttonbk.png);
+		background-position:0px 35px;
+		height:30px;
+		padding:0 25px;;
+		border:1px solid #a0bccf;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		box-shadow:0px 0px 2px #4e8ba2;
+		-moz-box-shadow:0px -1px 2px #aaa;
+		-webkit-box-shadow:0px 0px 2px #4e8ba2;
+		font-weight:bold;
+		text-shadow:0px 1px #fff;
+	}
+		
+		#main-content .submit input:hover {
+			box-shadow:0px -1px 5px #4e8ba2;
+			-moz-box-shadow:0px -1px 5px #aaa;
+			-webkit-box-shadow:0px -1px 5px #4e8ba2;
+		}
+		
+		#main-content .submit input:active {
+			background-position:0px 0px;
+		}
+		
+.notice, .notice-success, .notice-fail {
+	background-color:#FF9;
+	border:1px solid #FC9;
+	padding:10px;
+	margin:10px 0px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.notice-success {
+	background-color:#cde798;
+	border:1px solid #5cd129;
+}
+
+.notice-fail {
+	background-color:#efc1c1;
+	border:1px solid #d78585;
+}
+
+.table-list {
+	border:none;
+	padding:10px;
+}
+
+.table-data {
+	border-collapse:collapse;
+}
+
+		.table-data, .table-data th, .table-data td
+		{
+		border:3px solid #f2f3f0;
+		background-color:#e4e9eb;
+		padding:10px;
+		}
+		
+		.table-data td {
+		transition:background-color 0.2s linear;
+		-moz-transition:background-color 0.2s linear;
+		-webkit-transition:background-color 0.2s linear;
+		}
+		
+		.table-data tr:hover td {
+		background-color:#cfe0e7;
+		}
